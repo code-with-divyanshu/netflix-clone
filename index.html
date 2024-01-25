@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Netflix Clone</title>
+	<link rel="icon" type="image/png" href="netflix-clone/logo.png">
+	<link rel="stylesheet" type="text/css" href="netflix-clone/style.css">
+	<script type="text/javascript" src="netflix-clone/script.js"></script>
+</head>
+<body>
+
+	<div class="nav">
+		<div class="nav_left">
+			<a href="index.html">
+				<img class="nav_logo" src="netflix-clone/netflix.png">
+			</a>
+		</div>
+		<div class="nav_right">
+			<img class="nav_avatar" src="netflix-clone/avatar.png">
+		</div>
+	</div>
+
+	<!-- banner -->
+
+	<header id="banner">
+		<div id="banner_contents">
+			<h1 id="banner_title"></h1>
+			<div id="banner_buttons">
+				<button id="banner_button">Play</button>
+				<button id="banner_button">My List</button>
+			</div>
+			<p id="banner_description"></p>
+		</div>
+		<div id="banner_fadeBottom"></div>
+	</header>
+
+
+
+
+	<!-- row -->
+
+	<div id="headrow">
+		<div class="row">
+			<h2 class="row_title"></h2>
+			<div class="row_posters"></div>
+		</div>
+	</div>
+	
+<script>
+	window.addEventListener("scroll", function() {
+		var nav = document.querySelector(".nav");
+		nav.classList.toggle("active", window.scrollY > 0);
+	});
+</script>
+</body>
+</html>
